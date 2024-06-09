@@ -16,6 +16,8 @@
     "configure-ratio": ". ./.env && pnpm forge script ./script/ConfigureRatio.s.sol:ConfigureRatio --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
     "execute": ". ./.env && pnpm forge script ./script/ExecuteVendingMachine.s.sol:ExecuteVendingMachine --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
     "configure-lens-seller": ". ./.env && pnpm forge script ./script/ConfigureLensSeller.s.sol:ConfigureLensSeller --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
+    "create-base-cosmetic": ". ./.env && pnpm forge script ./script/BaseCosmetics.s.sol:AddCosmetic --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
+    "get-base-cosmetic": ". ./.env && pnpm forge script ./script/BaseCosmetics.s.sol:GetCosmeticData --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
     "approve": ". ./.env && pnpm forge script ./script/ApproveToken.s.sol:ApproveToken --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv",
     "purchaseLens": ". ./.env && pnpm forge script ./script/PurchaseLensSeller.s.sol:PurchaseLensSeller --broadcast --rpc-url $RPC_URL --chain-id $CHAIN_ID --sig \"run(address)\" $WORLD_ADDRESS -vvv"
   },
@@ -27,6 +29,7 @@
     "@latticexyz/store": "2.0.0-transaction-context-98ef570f",
     "@latticexyz/world": "2.0.0-transaction-context-98ef570f",
     "@latticexyz/world-modules": "2.0.0-transaction-context-98ef570f",
+    "@openzeppelin/contracts": "^5.0.2",
     "i": "^0.3.7",
     "npm": "^10.8.0"
   },

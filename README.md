@@ -1,3 +1,14 @@
+# Remember to run this on a new namespace
+Run Scripts
+- Setup
+- AddSlotOptions
+- TraitSlotOptions
+- AddCampaignReward
+
+On entirely new world
+- SetupMintNFTs
+
+
 # Good Place to start 
 Our work is built on [MUD](https://mud.dev/quickstart). [MUD](https://mud.dev/introduction) docs is a good place to start learning the concepts 
 
